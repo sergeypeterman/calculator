@@ -1,13 +1,72 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face
+{
+  font-family: digital;
+  src: url(https://res.cloudinary.com/thepeted/raw/upload/v1507751384/DSDIGI_ctlean.ttf);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html, body {
+    height: 100%;
+}
+
+body{  
+  background-color: #bbb;
+  
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#calculator{
+  box-sizing: border-box;
+  width: 249px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+#screen{
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #aaa;
+  font-family: digital;
+  border: 2px solid #aaa;
+  border-radius: 5px 5px 0 0;
+}
+
+#memory, #display{
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: right;
+  background-color: #aaa;
+  padding: 10px;
+  margin: 0px;
+}
+#memory{
+  font-size: 1.2em;
+  color: #272;
+  height: 2rem;
+}
+#display{
+  font-size: 2em;
+  
+}
+
+#pad{
+  box-sizing: border-box;
+  width: 100%;
+  
+}
+
+#pad button{
+  width: 60px;
+  height: 60px;
+}
+
+.hor{
+  width: 120px !important;
 }
